@@ -16,6 +16,23 @@
         <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
     </button>
 
+       <!-- Hamburger Menu -->
+<button id="menu-toggle" aria-label="Toggle Menu">
+    <i class="fas fa-bars"></i>
+</button>
+
+<!-- Navigation Menu -->
+<div class="buttons" id="nav-menu">
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#game">Game</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
     <img src="{{ url_for('static', filename='vio.jpeg') }}" alt="Violina Das" class="profile-img">
     <h1 class="intro-text">Hi, I'm Violina Das</h1>
     <p class="intro-text">B.Tech in Computer Science and Engineering | Software Developer | AI/ML Enthusiast | Full-stack Web Developer | Game Developer</p>
@@ -366,8 +383,22 @@ cross-browser support (5+ browsers) and mobile compatibility.
     };
 </script>
 
+    <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        if (navMenu.style.display === "flex") {
+            navMenu.style.display = "none";
+        } else {
+            navMenu.style.display = "flex";
+        }
+    });
+</script>
+
 </body>
 </html>
+
 
 
 
