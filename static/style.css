@@ -336,3 +336,47 @@ body.dark-mode .introjs-button:hover {
         padding: 8px 12px;
     }
 }
+
+/* Hamburger Menu (hidden on desktop) */
+#menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 20px;   /* 👈 top-left */
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: var(--highlight-color);
+    color: white;
+    font-size: 22px;
+    z-index: 1100;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .buttons {
+        display: none;
+        flex-direction: column;
+        background: var(--section-bg);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    #menu-toggle {
+        display: block; /* show hamburger in mobile */
+    }
+}
+
