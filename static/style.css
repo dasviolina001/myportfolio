@@ -364,28 +364,3 @@ body.dark-mode .introjs-button:hover {
 .sidebar.active {
     left: 0;
 }
-
-/* Show hamburger only on mobile */
-#hamburger {
-    display: none;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    font-size: 24px;
-    background: var(--highlight-color);
-    color: white;
-    border: none;
-    padding: 8px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    z-index: 1000;
-}
-@media (max-width: 768px) {
-    #hamburger {
-        display: block;
-    }
-    .buttons {
-        display: none; /* Hide original buttons on mobile */
-    }
-}
-
