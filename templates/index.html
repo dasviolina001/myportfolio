@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Violina Das | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Intro.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+</head>
+<body>
+   <div class="hero">
+    <!-- Dark Mode Toggle (top-right corner) -->
+    <button id="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
+        <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <img src="{{ url_for('static', filename='vio.jpeg') }}" alt="Violina Das" class="profile-img">
+    <h1 class="intro-text">Hi, I'm Violina Das</h1>
+    <p class="intro-text">B.Tech in Computer Science and Engineering | Software Developer | AI/ML Enthusiast | Full-stack Web Developer | Game Developer</p>
+    <div class="buttons">
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#game">Game</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+    <div class="section" id="education">
+    <h2>🎓 Education</h2>
+    <ul>
+        <li><strong>B.Tech in Computer Science and Engineering</strong><br>
+            Regional Institute of Science and Technology (NEHU), Meghalaya (2021 – 2025)<br>
+            <em>Relevant Coursework:</em> Data Structures, OS, Networking, AI/ML, DBMS, Software Engineering
+        </li><br>
+
+        <li><strong>Higher Secondary (HS)</strong><br>
+            Bajali Academy of Excellence, Pathsala – 2021<br>
+            <strong>Score:</strong> 90.6%
+        </li><br>
+
+        <li><strong>High School Leaving Certificate (HSLC)</strong><br>
+            Anundoram Boroah Academy, Pathsala – 2019<br>
+            <strong>Score:</strong> 81.5%
+        </li>
+    </ul>
+</div>
+
+    <div class="section" id="skills">
+        <h2>💻 Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, C, PHP, SQL, VB.NET</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+            <li><strong>Frameworks/ Libraries:</strong> PyTorch, XGBoost, OpenCV</li>
+            <li><strong>Databases & Tools:</strong> MySQL, SQLite, Git, VS Code, Visual Studio Community</li>
+            <li><strong>Other Skills:</strong> AI/ML, TTS, Debugging, Windows & Linux Environments</li>
+        </ul>
+    </div>
+
+   <div class="section" id="experience">
+    <h2>🧑‍💼 Experience</h2>
+    <ul>
+        <li>
+            <strong>IOCL (Noonmati, Guwahati)</strong> – Intern  
+            <br><em>Dec 2023 – Jan 2024</em><br>
+            Developed a QR inventory system reducing stock mismatches by 30%.  
+            Digitized manual tracking processes; improved operational efficiency.<br><br>
+            <a href="{{ url_for('static', filename='iocl_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='iocl_cert.jpeg') }}" alt="IOCL Certificate" class="exp-cert">
+            </a>
+        </li><br>
+
+        <li>
+            <strong>AMTRON (Bamunimaidan, Guwahati)</strong> – Backend Intern  
+            <br><em>Aug 2024</em><br>
+            Integrated REST APIs in 2 government applications; contributed to smoother backend logic.  
+            Collaborated in QA cycles and resolved 20+ bugs.<br><br>
+            <a href="{{ url_for('static', filename='amtron_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='amtron_cert.jpeg') }}" alt="AMTRON Certificate" class="exp-cert">
+            </a>
+        </li><br>
+
+        <li>
+            <strong>APDCL (Sixmile, Guwahati)</strong> – Telecom Intern  
+            <br><em>Dec 2024 – Jan 2025</em><br>
+            Analyzed internal call routing system; reduced call resolution time by 15%.  
+            Documented system workflow for future IT planning.<br><br>
+            <a href="{{ url_for('static', filename='apdcl_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='apdcl_cert.jpeg') }}" alt="APDCL Certificate" class="exp-cert">
+            </a>
+        </li>
+    </ul>
+</div>
+
+   <div class="section" id="projects">
+    <h2>📁 Projects</h2>
+    <ul>
+        <li>
+            <strong>Birthday Greeting Web App:</strong>  
+            Built a responsive greeting web app using HTML, CSS, and JavaScript; deployed on Render with
+cross-browser support (5+ browsers) and mobile compatibility.  
+            Live Demo: <a href="https://birthday-deva.onrender.com" target="_blank" target="_blank">birthday</a><br>
+            🔗 <a href="https://github.com/dasviolina001/birthday" target="_blank">View Repo</a>
+        </li><br>
+        <li>
+            <strong>AI Translation Chatbot:</strong>  
+            Developed a Seq2Seq + Attention model in PyTorch to translate English to Assamese/Bodo with 95%+ accuracy.  
+            Includes Text-to-Speech (TTS) and browser-based user interface.<br>
+            🔗 <a href="https://github.com/dasviolina001/bilingual-translator-ai" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>Real-Time Person Detection System:</strong>  
+            Built a real-time surveillance system using YOLO for face detection and DeepFace for facial recognition.  
+            Achieved over 90% match accuracy; triggered alerts via automated notification pipeline.<br>
+            🔗 <a href="https://github.com/dasviolina001/Real-Time-Automated-Person-Detection-And-Alert-System" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>MediShop – E-Pharmacy:</strong>  
+            Responsive online medicine store built using HTML, CSS, JavaScript, and PHP.  
+            Includes cart functionality, product listing, and multi-step checkout flow.<br>
+            🔗 <a href="https://github.com/dasviolina001/medishop" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>Sivcon Commercial Site:</strong>  
+            SEO-optimized client website with 90+ PageSpeed score.  
+            Built for live commercial use: <a href="https://sivcon.in" target="_blank">sivcon.in</a><br>
+            🔗 <a href="https://github.com/dasviolina001/sivcon.in" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>NYC Taxi Fare Predictor:</strong>  
+            Trained an XGBoost regression model on 50k+ rows of NYC taxi data.  
+            Achieved RMSE = 3.2 and R² = 0.84.<br>
+            🔗 <a href="https://github.com/dasviolina001/NYC-Taxi-Fare" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>Vaccine Uptake Predictor:</strong>  
+            Developed ML classification models using XGBoost and CatBoost to predict vaccine uptake.  
+            Achieved ROC-AUC score of 82%.<br>
+            🔗 <a href="https://github.com/dasviolina001/Vaccine-Prediction" target="_blank">View Repo</a>
+        </li><br>
+
+        <li>
+            <strong>Shopping Mall Management System:</strong>  
+            Created a desktop billing application using VB.NET and SQL.  
+            Included secure login and support for over 1000 product records.<br>
+            🔗 <a href="https://github.com/dasviolina001/ShoppingMallManagement-VB.NET" target="_blank">View Repo</a>
+        </li>
+    </ul>
+</div>
+
+<!-- New Game Section (place it BELOW projects, before certifications) -->
+<div class="section" id="game">
+    <h2>🎮 My Game Section</h2>
+    <p>
+        <strong>Fruit Sword Game:</strong>
+        Slice fruits, avoid bombs, and score high in this fun, interactive game built with HTML, CSS, and JavaScript!
+    </p>
+
+    <h3>✨ Features</h3>
+    <ul>
+        <li>Three difficulty levels: Easy 🍏, Medium 🍊, Hard 🍒</li>
+        <li>Sound on/off toggle</li>
+        <li>Pause and back buttons</li>
+        <li>Game ends if more than 8 fruits are missed or a bomb is sliced</li>
+        <li>Works on desktop and mobile devices</li>
+    </ul>
+
+    <h3>🎥 Demo & Screenshots</h3>
+    <div class="media-container">
+        <!-- Replace with your actual screenshots -->
+        <img src="{{ url_for('static', filename='Screenshot 2.png') }}" alt="Game Screenshot 1" class="game-img">
+        <img src="{{ url_for('static', filename='Screenshot 3.png') }}" alt="Game Screenshot 2" class="game-img">
+        <img src="{{ url_for('static', filename='Screenshot 1.png') }}" alt="Game Screenshot 2" class="game-img">
+        <!-- Replace with your actual video -->
+        <video controls class="game-video">
+            <source src="{{ url_for('static', filename='Fruit Sword Game vd.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h3>🕹 How to Play</h3>
+    <ol>
+        <li>Open the game in your browser.</li>
+        <li>Select difficulty and toggle sound if desired.</li>
+        <li>Click "Play Game" to start.</li>
+        <li>Move your sword (mouse or touch) to slice fruits.</li>
+        <li>Avoid bombs!</li>
+        <li>Pause or go back anytime using the buttons.</li>
+    </ol>
+
+    <h3>🔗 <a href="https://github.com/dasviolina001/fruit-sword-game" target="_blank">View Github Repo</a> </h3>
+    <p>
+        <a href="https://fruit-sword-game.onrender.com" target="_blank" class="btn">🎮 Play Game</a>
+    </p>
+</div>
+
+    <div class="section" id="certifications">
+    <h2>📜 Certifications</h2>
+    <div class="cert-grid">
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='python_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='python_cert.jpeg') }}" alt="Python Certificate">
+            </a>
+            <p>Python – Internshala</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='ai_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='ai_cert.jpeg') }}" alt="AI Internship Certificate">
+            </a>
+            <p>AI Internship – YHills</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='c_cert.jpg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='c_cert.jpg') }}" alt="C Programming Certificate">
+            </a>
+            <p>C Programming – Great Learning</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='blockchain_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='blockchain_cert.jpeg') }}" alt="Blockchain Seminar">
+            </a>
+            <p>Blockchain Seminar – Skill-Lync</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='chatgpt_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='chatgpt_cert.jpeg') }}" alt="ChatGPT Course">
+            </a>
+            <p>Generative AI with ChatGPT – Udemy</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='aii_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='aii_cert.jpeg') }}" alt="AI Internship 2">
+            </a>
+            <p>AI Internship – YHills</p>
+        </div>
+
+        <div class="cert-item">
+            <a href="{{ url_for('static', filename='pythonn_cert.jpeg') }}" target="_blank">
+                <img src="{{ url_for('static', filename='pythonn_cert.jpeg') }}" alt="Python Extra">
+            </a>
+            <p>Python – Internshala</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2>📞 Contact Me</h2>
+    <div class="contact-icons">
+        <a href="mailto:dasviolina51@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://linkedin.com/in/violina-das-91a11b229" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/dasviolina001" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/dasviolina001?igsh=N2dkMnlyb2E4YzI1" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/share/177yhMjZpR/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/919394004391" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919394004391" title="Call">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="sms:+919394004391" title="Send SMS">
+            <i class="fas fa-sms"></i>
+        </a>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Violina Das</p>
+    </footer>
+
+<script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const icon = document.getElementById("theme-icon");
+    const body = document.body;
+
+    // Apply saved theme on load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        body.classList.add("dark-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+        toggleBtn.setAttribute("aria-pressed", "true");
+    }
+
+    // Toggle theme + icon
+    toggleBtn.addEventListener("click", () => {
+        const nowDark = body.classList.toggle("dark-mode");
+        if (nowDark) {
+            localStorage.setItem("theme", "dark");
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+            toggleBtn.setAttribute("aria-pressed", "true");
+        } else {
+            localStorage.setItem("theme", "light");
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+            toggleBtn.setAttribute("aria-pressed", "false");
+        }
+    });
+
+    // Show button when user scrolls down
+    window.onscroll = function() {
+        let button = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    // Scroll to top smoothly
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Intro.js JS -->
+<script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+<script>
+    window.onload = function() {
+        // Run intro only if not seen before
+        if (!localStorage.getItem("tourSeen")) {
+            introJs().setOptions({
+                steps: [
+                    { intro: "Welcome! Let me guide you through my portfolio." },
+                    { element: document.querySelector('#education'), intro: "Here is my Education section." },
+                    { element: document.querySelector('#skills'), intro: "These are my Technical Skills." },
+                    { element: document.querySelector('#experience'), intro: "This section showcases my Experience and Internships." },
+                    { element: document.querySelector('#projects'), intro: "Check out my Projects with GitHub links." },
+                    { element: document.querySelector('#game'), intro: "Check out my Games with GitHub links along with a Play button to try the game." },
+                    { element: document.querySelector('#certifications'), intro: "Here are my Certifications and Achievements." },
+                    { element: document.querySelector('#contact'), intro: "You can reach me using these Contact options." },
+                    { element: document.querySelector('#theme-toggle'), intro: "Toggle between Dark and Light mode using this button." }
+                ]
+            }).start();
+            localStorage.setItem("tourSeen", "true");
+        }
+    };
+</script>
+
+</body>
+</html>
