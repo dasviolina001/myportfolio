@@ -11,6 +11,22 @@
 </head>
 <body>
    <div class="hero">
+       <!-- Hamburger (only visible on mobile) -->
+<button id="hamburger" aria-label="Menu">
+    <i class="fas fa-bars"></i>
+</button>
+
+<!-- Sidebar Menu (hidden by default) -->
+<div id="sidebar" class="sidebar">
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#game">Game</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</div>
+
     <!-- Dark Mode Toggle (top-right corner) -->
     <button id="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
         <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
@@ -365,6 +381,13 @@ cross-browser support (5+ browsers) and mobile compatibility.
         }
     };
 </script>
+<script>// Sidebar toggle for mobile
+const sidebar = document.getElementById("sidebar");
 
+hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+</script>
 </body>
 </html>
+
