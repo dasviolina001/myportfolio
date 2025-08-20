@@ -375,3 +375,22 @@ body.dark-mode .introjs-button:hover {
         text-align: center;
     }
 }
+
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none; /* hide normal nav on mobile */
+    }
+    nav.active ul {
+        display: block; /* show nav when active */
+    }
+}
+
